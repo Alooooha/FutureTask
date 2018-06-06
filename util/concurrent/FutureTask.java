@@ -1,4 +1,4 @@
-package util.concurrent;
+﻿package util.concurrent;
 
 import java.lang.reflect.Field;
 import java.util.concurrent.Callable;
@@ -365,6 +365,9 @@ public class FutureTask<V> implements RunnableFuture<V> {
 		}
 	}
 	
+	/**
+	* 通过反射获得Unsafe对象
+	*/
 	private static sun.misc.Unsafe getUnsafe() {
 
 		Class<?> unsafeClass = sun.misc.Unsafe.class;
